@@ -5,6 +5,7 @@ fun main(args: Array<String>) {
 fun runSimulation() {
     val greetingFunction = configureGreetingFunction()
     println(greetingFunction("Guyal"))
+    println(greetingFunction("Guyal"))
 }
 
 fun printConstructionCost(numBuildings: Int) {
@@ -15,7 +16,7 @@ fun printConstructionCost(numBuildings: Int) {
 fun configureGreetingFunction(): (String) -> String {
     val structureType = "hospitals"
     var numBuildings = 5
-    return {playerName: String ->
+    return { playerName: String ->
         val currentYear = 2018
         numBuildings += 1
         println("Adding $numBuildings $structureType")
